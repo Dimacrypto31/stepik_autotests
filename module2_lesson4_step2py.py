@@ -19,7 +19,7 @@ try:
     browser.find_element(By.XPATH, '//*[contains(@class, "trollface btn btn-primary")]').click()
 
     new_window = browser.window_handles[1]
-    browser.switch_to.window(new_window)
+    browser.switch_to.window(new_window)  #переход в новое окно
 
     xelem = browser.find_element(By.XPATH, '//*[contains(@id, "input_value")]')
     x = xelem.text
